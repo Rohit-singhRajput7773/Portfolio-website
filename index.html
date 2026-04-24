@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Singh — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style-additions.css" /> -->
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <header>
+    <div class="logo"><span>Port</span>folio</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Certificate">Certificate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Slide-Down Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home"        onclick="closeMenu()">Home</a>
+    <a href="#about"       onclick="closeMenu()">About Me</a>
+    <a href="#skill"       onclick="closeMenu()">Skills</a>
+    <a href="#projects"    onclick="closeMenu()">Projects</a>
+    <a href="#Certificate" onclick="closeMenu()">Certificate</a>
+    <a href="#contact"     onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- ── HOME ── -->
+  <section id="home">
+    <div class="home-content">
+      <p class="greeting">Hello, it's Me</p>
+      <h1>Rohit Singh Rajput</h1>
+
+      <h2>I'm a <span id="typewriter-text"></span><span class="typewriter-cursor">|</span></h2>
+
+      <p>A passionate frontend developer crafting beautiful and functional web experiences. I specialise in HTML, CSS, JavaScript, and modern frameworks with an eye for clean design.</p>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/rohi_tsingh7773?igsh=MXN0eDIzeTRuZ2pobg==&utm_source=ig_contact_invite"" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://Wa.me" aria-label="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/rohit-singh-709648320"" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+      <a href="best_resume.pdf" class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+    </div>
+
+    <div class="profile-img-home">
+      <img src="RohitSingh.png" alt="Rohit Singh Rajput"
+           onerror="this.src='https://ui-avatars.com/api/?name=Rohit+Singh&background=00ffe7&color=020613&size=340&font-size=0.33&bold=true'" />
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <h2 class="section-heading">About <span>Me</span></h2>
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="RohitSingh.png" alt="Rohit Singh Rajput"
+             onerror="this.src='https://ui-avatars.com/api/?name=Rohit+Singh&background=00ffe7&color=020613&size=300&font-size=0.33&bold=true'" />
+      </div>
+      <div class="about-text">
+        <p>Aspiring Frontend Developer with a strong foundation in HTML, CSS, JavaScript, and Bootstrap, focused on building responsive and visually appealing websites.</p>
+        <p>Familiar with React for creating dynamic user interfaces and experienced in version control using Git and GitHub.</p>
+        <p>Possesses basic knowledge of C programming and currently learning Data Structures and Algorithms using C++ to strengthen problem-solving skills.</p>
+        <p> Eager to apply technical knowledge, improve user experience, and grow as a professional developer.</p>
+        <br />
+        <a href="#contact" class="btn-primary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skill">
+    <h2 class="section-heading">My <span>Skills</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="icon">💻</div>
+        <h3>Frontend Development</h3>
+        <p>HTML, CSS, JavaScript &amp; responsive design — building pixel-perfect interfaces users love.</p>
+      </div>
+      <div class="skill-card">
+        <div class="icon">⚙️</div>
+        <h3>Other knowledge Skill</h3>
+        <p>React learning, git & Github &amp; C programming  and Bootstrap </p>
+      </div>
+      <div class="skill-card">
+        <div class="icon">🎨</div>
+        <h3>UI / UX Design</h3>
+        <p>Figma &amp; design systems — creating intuitive flows and visually compelling experiences.</p>
+      </div>
+    </div>
+
+    <div class="skill-bars">
+      <div class="bar-item">
+        <div class="bar-label"><span>HTML &amp; CSS</span><span>90%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label"><span>JavaScript</span><span>75%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:75%"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label"><span>React.js</span><span>65%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:65%"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label"><span>C prog / git and Github</span><span>90%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <h2 class="section-heading"><span>My</span> Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-thumb">🛒</div>
+        <div class="project-body">
+          <h3>E-Commerce Website</h3>
+          <p>A fully responsive e-commerce platform with product filtering, cart functionality, and checkout process.</p>
+          <a href="https://rohit-singhrajput7773.github.io/Shopping-with-AI-web/" class="btn-view">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">🚘</div> 
+        <div class="project-body">
+          <h3>Best cars & bike deals</h3>
+          <p>A fully responsive cars and bikes website with modern design, smooth navigation, and easy EMI options for convenient vehicle purchasing.</p>
+          <a href="https://rohit-singhrajput7773.github.io/Cars-showroom-website" class="btn-view">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">🌤️</div>
+        <div class="project-body">
+          <h3>Weather App</h3>
+          <p>Real-time weather application using OpenWeather API with location-based 7 forecasts and clean UI.</p>
+          <a href="https://rohit-singhrajput7773.github.io/Weather-App-Rohit-Singh/" class="btn-view">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">☕</div>
+        <div class="project-body">
+          <h3>The Golden Mug</h3>
+          <p>A fully responsive cafe website with elegant design, menu showcase, smooth navigation, and engaging visuals for a delightful user experience.</p>
+          <a href="https://rohit-singhrajput7773.github.io/The-brandCafe-website-/#drinks" class="btn-view">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">✈️</div>
+        <div class="project-body">
+          <h3>Personal Portfolio</h3>
+          <p>Personal portfolio showcasing projects and certificates, highlighting skills in web development, creativity, and continuous learning without prior professional experience.</p>
+          <a href="#" class="btn-view">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATES ── -->
+  <section id="Certificate">
+    <h2 class="section-heading">My <span>Certificates</span></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-thumb">📜</div>
+        <div class="project-body">
+          <h3>Introduction to Prompt Engineering with Github Copilot</h3>
+          <p>Issued by <strong>SimpliLearn | Skillup</strong> cover a Prompt Engineering with git & github.</p>
+          <a href="Certificates/975.pdf" class="btn-view" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">⚛️</div>
+        <div class="project-body">
+          <h3>Github — The Complete Guide</h3>
+          <p>Issued by <strong>SimpliLearn|SkillUP</strong> — cover a full Gihub Complete Cource helps manage code and project</p>
+          <a href="Certificates/974.pdf" class="btn-view" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb"></div>
+        <div class="project-body">
+          <h3>Generative AI</h3>
+          <p>Issued by <strong>Microsoft and LinkdIn</strong> I have Completed Generative AI with top Skill cover - Microsoft Copilot | Generative AI and Responsible AI</p>
+          <a href="Certificates/LinkedIn Learning Certificate.pdf" class="btn-view" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">🏆</div>
+        <div class="project-body">
+          <h3>Responsive Web Design</h3>
+          <p>Issued by <strong>Icat</strong> — this Internship purpose is take the exam for Internship Common Aptitude Test</p>
+          <a href="Certificates/Rohit Singh - Participation Certificate.pdf" class="btn-view" target="_blank" rel="noopener">View Certificate</a>
+          <a href="Certificates/Rohit Singh - Website Design and Development Internship - Offer Letter.pdf" class="btn-view" target="_blank" rel="noopener">View Offer Latter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <h2 class="section-heading">Get In <span>Touch</span></h2>
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h3>Let's talk about your project</h3>
+        <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+
+        <div class="info-item">
+          <div class="ico"><i class="fa-solid fa-envelope"></i></div>
+          <div class="detail"><strong>Email</strong>rohitsinghraj7773@gmail.com</div>
+        </div>
+        <div class="info-item">
+          <div class="ico"><i class="fa-solid fa-phone"></i></div>
+          <div class="detail"><strong>Phone</strong>+91 9024-496-436</div>
+        </div>
+        <div class="info-item">
+          <div class="ico"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="detail"><strong>Location</strong>Raja Park, Jaipur, Rajasthan</div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="name" required placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" required placeholder="Your Email" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" required placeholder="Your Message..."></textarea>
+          </div>
+          <a href="https://wa.me/9024496436?text=if%20you%20want%20to%20contact%20me%20%2C%20feel%20free%20anything%0A" class="btn-send"><i class="fa-solid fa-paper-plane"></i>Send Message</a>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+
+      <!-- Brand + Social -->
+      <div class="footer-brand">
+        <div class="logo"><span>Port</span>folio</div>
+        <p>Building beautiful, functional web experiences with clean code and creative design.</p>
+        <div class="footer-social social-icons">
+          <a href="https://www.instagram.com/rohi_tsingh7773?igsh=MXN0eDIzeTRuZ2pobg==&utm_source=ig_contact_invite" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://Wa.me" aria-label="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/rohit-singh-709648320" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Rohit-singhRajput7773" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://youtube.com/@animals_ai_storyt?si=jOYIXf4gGTzCHOiU" aria-label="youtube / X"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#Certificate">Certificate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Project Links -->
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="https://rohit-singhrajput7773.github.io/Shopping-with-AI-web/">🛒 E-Commerce Site</a></li>
+          <li><a href="https://rohit-singhrajput7773.github.io/Cars-showroom-website">🚘 Best cars & bike deals</a></li>
+          <li><a href="https://rohit-singhrajput7773.github.io/Weather-App-Rohit-Singh/">🌤️ Weather App</a></li>
+          <li><a href="https://rohit-singhrajput7773.github.io/The-brandCafe-website-/#drinks">☕ The Golden Mug</a></li>
+          <li><a href="#"> Personal Portfolio</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fa-solid fa-envelope"></i> rohitsinghraj7773@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +91 902 449-6436</li>
+          <li><i class="fa-solid fa-location-dot"></i> Raja Park, Jaipur, Rajasthan</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>© 2025 <span>Rohit Singh Rajput</span>. All rights reserved.</p>
+      <p>Designed &amp; Built with <span>♥</span> by Rohit</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Typewriter Effect -->
+  <script>
+    (function () {
+      const roles   = ["Frontend Developer", "Web Developer", "UI/UX Designer", "React Developer"];
+      const target  = document.getElementById("typewriter-text");
+      let roleIdx   = 0;
+      let charIdx   = 0;
+      let isDeleting = false;
+
+      const TYPE_SPEED   = 100;
+      const DELETE_SPEED = 55;
+      const PAUSE_END    = 1800;
+      const PAUSE_START  = 400;
+
+      function tick() {
+        const currentRole = roles[roleIdx];
+
+        if (!isDeleting) {
+          target.textContent = currentRole.slice(0, ++charIdx);
+          if (charIdx === currentRole.length) {
+            isDeleting = true;
+            setTimeout(tick, PAUSE_END);
+            return;
+          }
+        } else {
+          target.textContent = currentRole.slice(0, --charIdx);
+          if (charIdx === 0) {
+            isDeleting = false;
+            roleIdx    = (roleIdx + 1) % roles.length;
+            setTimeout(tick, PAUSE_START);
+            return;
+          }
+        }
+
+        setTimeout(tick, isDeleting ? DELETE_SPEED : TYPE_SPEED);
+      }
+
+      setTimeout(tick, 600);
+    })();
+  </script>
+
+</body>
+<script src="Script.js"></script>
+</html>
